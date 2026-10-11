@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <defs>
+    <linearGradient id="base" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4f5bea"/>
+      <stop offset="1" stop-color="#2a2d93"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#e6e8f8"/>
+    </linearGradient>
+    <radialGradient id="orb" cx="0.38" cy="0.35" r="0.7">
+      <stop offset="0" stop-color="#fff1b8"/>
+      <stop offset="0.35" stop-color="#ffb43d"/>
+      <stop offset="1" stop-color="#ff4f2e"/>
+    </radialGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ffb43d" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#ffb43d" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="trail" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#ff7a3d" stop-opacity="0"/>
+      <stop offset="1" stop-color="#ff9a3d" stop-opacity="1"/>
+    </linearGradient>
+  </defs>
+  <rect x="8" y="12" width="112" height="108" rx="24" fill="#1c1e66"/>
+  <rect x="8" y="8" width="112" height="106" rx="24" fill="url(#base)"/>
+  <!-- app window -->
+  <rect x="20" y="40" width="74" height="60" rx="8" fill="#14164f" opacity="0.35" transform="translate(0 3)"/>
+  <rect x="20" y="40" width="74" height="60" rx="8" fill="url(#card)"/>
+  <path d="M28 40 h58 a8 8 0 0 1 8 8 v3 h-74 v-3 a8 8 0 0 1 8 -8 z" fill="#d3d7f4"/>
+  <circle cx="29" cy="45.5" r="2.4" fill="#8890dc"/>
+  <circle cx="36.5" cy="45.5" r="2.4" fill="#8890dc"/>
+  <circle cx="44" cy="45.5" r="2.4" fill="#8890dc"/>
+  <rect x="30" y="62" width="30" height="5" rx="2.5" fill="#c9cdee"/>
+  <rect x="30" y="72" width="22" height="5" rx="2.5" fill="#c9cdee"/>
+  <rect x="30" y="82" width="26" height="5" rx="2.5" fill="#c9cdee"/>
+  <!-- launch trail out of the window -->
+  <path d="M58 92 L86 46" stroke="url(#trail)" stroke-width="12" stroke-linecap="round"/>
+  <path d="M70 94 L92 56" stroke="url(#trail)" stroke-width="5" stroke-linecap="round" opacity="0.7"/>
+  <!-- the proton -->
+  <circle cx="90" cy="38" r="26" fill="url(#glow)"/>
+  <ellipse cx="90" cy="38" rx="23" ry="8.5" fill="none" stroke="#ffd9a0" stroke-width="2.5" transform="rotate(-30 90 38)" opacity="0.9"/>
+  <circle cx="90" cy="38" r="14" fill="url(#orb)"/>
+</svg>

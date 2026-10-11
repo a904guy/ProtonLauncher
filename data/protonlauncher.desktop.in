@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Name=Proton Launcher
+GenericName=Windows Program Launcher
+Comment=Run Windows programs with Steam's Proton
+Exec=@LAUNCHER@ --gui run %f
+Icon=@ICON@
+Terminal=false
+Categories=System;Emulator;
+Keywords=wine;windows;exe;proton;steam;
+MimeType=application/x-msdownload;application/vnd.microsoft.portable-executable;application/x-ms-dos-executable;application/x-msi;application/x-bat;
